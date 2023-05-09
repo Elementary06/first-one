@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Website</title>
+        <style>
+            body{
+                background: url(thumbnails/background2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                
+            }
+            .full-account{
+                border: 1px solid;
+                width: 350px;
+                height: 500px;
+                position: fixed;
+                border-color: white;
+                margin-bottom: 100px;
+                margin-right: 100px;
+                bottom: 0;
+                right: 0;
+                border-radius: 10px;
+                background-color: transparent;
+                flex-direction: column;
+                display: flex;
+                box-shadow: 0px 0px 2px white;
+                background-color: rgba(255, 255, 255, 0.5);
+                
+            }
+            .clientlogo{
+                color: white;
+                font-size: 60px;
+                font-family: arial;
+                display: flex;
+                flex-direction: row;
+                margin-left: 80px;
+                
+                
+            }
+            
+            .welcome{
+                color: white;
+                font-size: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                display: flex;
+                margin-left: 50px;
+                margin-top: 170px;
+            }
+            .text{
+                color: white;
+                font-size: 20px;
+                font-family: arial;
+                margin-left: 30px;
+                display: inline-block;
+                margin-top: 220px;
+                width: 400px;
+            }
+            .have-an-account{
+                font-family: arial;
+                font-size: 20px;
+                margin-top: 60px;
+                vertical-align: middle;
+                margin-left: 100px;
+                font-weight: bold;
+            }
+            .username{
+                background-color: transparent;
+                border: 1px solid;
+                display: flex;
+                margin-top: 30px;
+                margin-left: 60px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-right: 35px;
+                padding-left: 35px;
+                border-radius: 100px;
+                outline: none;
+                border-color: rgba(7, 23, 42, 0.7);
+                box-shadow: 0px 0px 1px rgba(7, 23, 42, 0.7);
+            }
+
+            .username::placeholder {
+                color: black;
+            }
+
+            .password {
+                background-color: transparent;
+                border: 1px solid;
+                margin-top: 30px;
+                margin-left: 60px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-right: 35px;
+                padding-left: 35px;
+                border-radius: 100px;
+                outline: none;
+                border-color: rgba(7, 23, 42, 0.7);
+                box-shadow: 0px 0px 1px rgba(7, 23, 42, 0.7);
+            }
+
+            .password::placeholder {
+                color: black;
+            }
+
+            .sign-in { 
+                background-color: transparent;
+                border: 1px solid;
+                margin-top: 30px;
+                margin-left: 60px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-right: 35px;
+                padding-left: 35px;
+                border-radius: 100px;
+                cursor: pointer;
+                border-color: rgba(7, 23, 42, 0.7);
+                font-weight: bold;
+                box-shadow: 0px 0px 2px rgba(7, 23, 42, 0.7);
+            }
+            .log-in{
+                background-color: transparent;
+                border: 1px solid;
+                margin-top: 30px;
+                margin-left: 25px;
+                
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-right: 25px;
+                padding-left: 25px;
+                border-radius: 100px;
+                cursor: pointer;
+                border-color: rgba(7, 23, 42, 0.7);
+                box-shadow: 0px 0px 2px rgba(7, 23, 42, 0.7);
+                font-weight: bold;
+            }
+            .remember-forgot{
+                display: flex;
+                margin-left: 60px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            .remember{
+                cursor: pointer;
+                font-size: 14px;
+                margin-left: 3px;
+                
+            }
+            
+            .forgot{
+                margin-left: 30px;
+                text-decoration: underline;
+                font-size: 14px;
+            }
+            .sign-in-with{
+                margin-top: 20px;
+                margin-left: 130px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .buttons{
+                margin-top: 10px;
+                margin-left: 60px;
+                display: flex;
+                margin-top: 30px;
+            }
+            .facebook{
+                border: 1px solid;
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 20px;
+                cursor: pointer;
+                background-color: rgba(7, 23, 42, 0.7);
+                color: snow;
+                border-color: rgba(7, 23, 42, 0.7);
+                box-shadow: 0px 0px 2px rgba(7, 23, 42, 0.7);
+                font-weight: bold;
+                
+            }
+            .twitter{
+                background-color: rgba(7, 23, 42, 0.7);
+                border: 1px solid;
+                margin-left: 30px;
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 20px;
+                cursor: pointer;
+                color: snow;
+                border-color: rgba(7, 23, 42, 0.7);
+                box-shadow: 0px 0px 2px rgba(7, 23, 42, 0.7);
+                font-weight: bold;
+            }
+
+            .checkbox {
+                appearance: none;
+                width: 12px;
+                height: 12px;
+                background-color: rgb(0, 0, 0);
+                border-radius: 5px;
+                align-items: center; 
+                display: flex;
+                margin-left: 88px;
+                margin-top: -15px;
+            }
+            .checkbox:checked {
+                background-image: url(icons/check.png);  
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/f0d636aa62.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="background">
+            <i style="color: rgb(255, 255, 255); cursor: pointer; display: flex;" class="fa-solid fa-house-user"></i>
+            <div class="full-left-text-div">
+                <div class="clientlogo">
+                    ClientLogo
+                </div>
+                <div class="welcome">
+                    Welcome!
+                </div>
+                <div class="text">
+                    Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating; there is really no such thing as bad weather, only different kinds of good weather.
+                 John Ruskin
+                </div>
+            </div>
+            <div class="full-account">
+                <div class="have-an-account">
+                    Have an account?
+                </div>
+                <div>
+                    <input class="username" type="text" placeholder="Username">
+                    <input class="password" type="text" placeholder="Password">
+                    <div class="sign-in-div">
+                        <button class="sign-in">
+                            Sign In
+                        </button>
+                        <button class="log-in">
+                            Log In
+                        </button>
+                    </div>
+                    <div class="remember-forgot">
+                        <div class="remember-div">
+                            <label class="remember" for="remember">
+                                Remember me
+                            </label>
+                            <input class="checkbox" id="remember" type="checkbox">
+                            </div>
+                        <div class="forgot">
+                            Forgot Password?
+                        </div>
+                    </div>
+                    <div class="sign-in-with">
+                        -Or Sign In With-
+                    </div>
+                    <div class="buttons">
+                        <button class="facebook">
+                            Facebook
+                        </button>
+                        <button class="twitter">
+                            Twitter
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
